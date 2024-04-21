@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Hunt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./Images/logo.png" alt="Burger Hunt Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about-us">About Us</a></li>
+            <li><a href="#" id="find-burger">Find Burgers</a></li>
+            <li><a href="#" id="blog">Blog</a></li>
+            <li><a href="#" id="contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Other sections of the landing page go here -->
+
+    <section class="hero" id="home">
+      <div class="container-1">
+        <h1>Welcome TO Burger Hunt</h1>
+        <h2>Experience the Taste of Perfection</h2>
+        <a href="#" class="cta-button">Explore Our Menu</a>
+      </div>
+      <span class="arrow">
+        <i class="fa-solid fa-arrow-up"></i>
+      </span>
+    </section>
+
+    <section class="about" id="aboutUs">
+      <div class="container">
+        <h2>About Burger Hunt</h2>
+        <p>
+          Burger Hunt is your ultimate destination for discovering the best
+          burger spots in Chandigarh. Our mission is to help you explore and
+          indulge in the juiciest, most mouth-watering burgers the city has to
+          offer.
+        </p>
+        <a href="menu.html" target="_blank"><button>Explore Our Menu</button></a>
+      </div>
+      <div class="features">
+        <img src="Images/about-image.jpg" alt="Reviews Icon" />
+      </div>
+    </section>
+
+    <section class="discover-burger" id="findBurger">
+      <div class="container-2">
+        <h2>Discover the Best Burgers</h2>
+        <div class="burger-list">
+          <div class="burger-item">
+            <img src="./Images/burger1.jpg" alt="Burger Image" />
+            <h3>Classic Cheese burger</h3>
+            <p>
+              A juicy beef patty topped with melted cheese, fresh lettuce,
+              tomato, and our special sauce. Served with a side of crispy fries.
+            </p>
+          </div>
+          <div class="burger-item">
+            <img src="./Images/burger2.jpg" alt="Burger Image" />
+            <h3>Veggie Delight</h3>
+            <p>
+              A delicious veggie patty made from a blend of fresh vegetables and
+              spices. Topped with avocado, sprouts, and tangy mayo. Served with
+              a side of sweet potato fries.
+            </p>
+          </div>
+          <div class="burger-item">
+            <img src="./Images/burger3.jpg" alt="Burger Image" />
+            <h3>Spicy BBQ Burger</h3>
+            <p>
+              A fiery burger packed with flavor! Grilled chicken breast
+              smothered in spicy BBQ sauce, topped with jalapenos, crispy onion
+              rings, and chipotle mayo. Served with a side of coleslaw.
+            </p>
+          </div>
+          <!-- Add more burger items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation">
+      <div class="container-4">
+        <h2>Make a Reservation</h2>
+        <form action="#" id="contactForm">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="Your name"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Your email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="phone"></label>
+          <input
+            type="tel"
+            placeholder="Phone no."
+            id="phone"
+            name="phone"
+            required
+          />
+
+          <label for="date"></label>
+          <input
+            type="date"
+            placeholder="Date"
+            id="date"
+            name="date"
+            required
+          />
+
+          <label for="time"></label>
+          <input
+            type="time"
+            placeholder="Time"
+            id="time"
+            name="time"
+            required
+          />
+
+          <label for="guests"></label>
+          <input
+            type="number"
+            placeholder="Number of Guests"
+            id="guests"
+            name="guests"
+            min="1"
+            required
+          />
+
+          <label for="message"></label>
+          <textarea
+            id="message"
+            placeholder="Additional Message (Optional)"
+            name="message"
+            rows="2"
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="testimonials" id="Blog">
+      <div class="container-3">
+        <h2>What Our Burger Lovers Say</h2>
+        <div class="testimonial-item">
+          <img src="./Images/customer1.jpg" alt="Customer Image" />
+          <p>
+            "The burgers at Berger Hut are simply amazing! The flavors are rich,
+            and the ingredients are always fresh. It's my go-to place whenever
+            I'm craving a delicious meal."
+          </p>
+          <p class="customer-name">John Doe</p>
+        </div>
+        <div class="testimonial-item">
+          <img src="./Images/customer2.jpg" alt="Customer Image" />
+          <p>
+            "I'm a burger enthusiast, and Burger Hunt never disappoints. Their
+            burgers are consistently delicious, and the service is excellent."
+          </p>
+          <p class="customer-name">Jane Smith</p>
+        </div>
+        <!-- Add more testimonial items as needed -->
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container-5">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-images">
+          <img src="./Images/gallery1.jpg" alt="Gallery Image 1" />
+          <img src="./Images/gallery2.jpg" alt="Gallery Image 2" />
+          <img src="./Images/gallery3.jpg" alt="Gallery Image 3" />
+          <img src="./Images/gallery4.jpg" alt="Gallery Image 4" />
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </section>
+
+  <div class="products-container" id="productsContainer">
+
+  </div>
+
+    <section id="contact">
+      <div class="container-6">
+        <h2>Contact Us</h2>
+        <div class="contact-second">
+          <p>123 Main Street, City, Country</p>
+          <p>+1 234 567 890</p>
+          <p>info@bergerhut.com</p>
+        </div>
+        <form action="#" id="contact-form">
+          <label for="name"></label>
+          <input
+            type="text"
+            placeholder="Your name"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label for="email"></label>
+          <input
+            type="email"
+            placeholder="Your email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="message"></label>
+          <textarea
+            id="message"
+            placeholder="Your message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <img src="./Images/logo.png" alt="Logo of the Website" />
+      <div class="foot-nav">
+        <a>Home</a>
+        <a>About</a>
+        <a>Menu</a>
+        <a>Reservations</a>
+        <a>Testimonials</a>
+        <a>Galery</a>
+        <a>Contact Us</a>
+      </div>
+      <p class="foot-last">&copy; 2023 Burger Hut. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

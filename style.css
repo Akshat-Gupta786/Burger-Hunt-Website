@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4a0f2e; /* Dark background color */
+  color: #fff; /* Text color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; /* Adjust size as needed */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Link color */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Link color on hover */
+}
+
+.hero {
+  background-image: url("./Images/hero-background1.jpg"); /* Replace 'burger_hero_image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust height as needed */
+  color: #fff; /* Text color */
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 50px;
+}
+
+.arrow:hover {
+  color: #f0c808;
+  box-shadow: 0px 0px 10px white;
+}
+
+
+
+.hero .container-1 {
+  max-width: 800px;
+  padding: 20px;
+  margin-left: 60px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffd700; /* Button background color */
+  color: #1e1e1e; /* Button text color */
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0c808; /* Button background color on hover */
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /*Gap between columns*/
+  background-color: #4a0f2e; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 50px 0;
+  text-align: center;
+}
+.about .container {
+  display: grid;
+  text-align: left;
+  margin-left: 60px;
+}
+
+
+.features img {
+  width: 500px;
+  height: 400px;
+  box-shadow: 10px 10px 20px grey;
+}
+
+.about h2 {
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+}
+
+.about button {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #f3670c;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.about button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.discover-burger {
+  background-color: #4a0f2e; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 50px 0;
+}
+
+.discover-burger .container-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discover-burger h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: block;
+}
+
+.burger-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.burger-item {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust item width based on the number of items per row */
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-item:hover {
+  transform: scale(1.1);
+}
+
+.burger-item img {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.burger-item h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.burger-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffd700; /* Button background color */
+  color: #1e1e1e; /* Button text color */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0c808; /* Button background color on hover */
+}
+
+section.reservation {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+section form {
+  padding: 20px 50px;
+  background-color: #333;
+  border-radius: 10px;
+}
+section.reservation h2 {
+  margin-bottom: 30px;
+}
+
+section.reservation form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section.reservation form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+section.reservation form input[type="text"],
+section.reservation form input[type="email"],
+section.reservation form input[type="tel"],
+section.reservation form input[type="date"],
+section.reservation form input[type="time"],
+section.reservation form input[type="number"],
+section.reservation form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section.reservation form textarea {
+  height: 60px;
+}
+
+section.reservation form button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.testimonials {
+  background-color: #4a0f2e; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonials .container-3 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.testimonial-item {
+  margin-bottom: 40px;
+}
+
+.testimonial-item img {
+  width: 100px; /* Adjust image size as needed */
+  border-radius: 50%; /* Rounded image */
+  margin-bottom: 20px;
+}
+
+.testimonial-item p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.customer-name {
+  font-style: italic;
+  font-size: 16px;
+  color: #aaa; /* Lighter text color for customer name */
+}
+
+.container-5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section.gallery {
+  padding-top: 50px;
+  text-align: center;
+}
+
+section.gallery h2 {
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-images img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+.gallery-images img:hover {
+  transform-origin: left;
+  rotate: 10deg;
+}
+
+
+.container-6 {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #fff;
+}
+
+section#contact {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+section .contact-second {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+section#contact h2 {
+  margin-bottom: 30px;
+}
+
+section#contact p {
+  margin-bottom: 40px;
+}
+
+section#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section#contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+section#contact form input[type="text"],
+section#contact form input[type="email"],
+section#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section#contact form textarea {
+  height: 150px;
+}
+
+section#contact form button {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer.footer-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+}
+
+footer .foot-nav a {
+  margin: 15px 10px;
+}
+
+.foot-nav a:hover{
+  color: #f3670c;
+  cursor: pointer;
+}
+
+footer .foot-last {
+  margin-top: 60px;
+}
